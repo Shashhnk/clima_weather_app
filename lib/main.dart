@@ -1,4 +1,5 @@
-import 'package:clima_weather_app/screens/city_screen.dart';
+
+
 import 'package:clima_weather_app/screens/location_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/Loadingscreen.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: LoadingScreen(),
+      home:  LoadingScreen(),
     );
   }
 }

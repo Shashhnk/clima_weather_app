@@ -7,7 +7,6 @@ class WeatherModel {
   Future getlocationweather()async{
     Location location = Location();
     await location.getCurrentlocation();
-
     Networkhelper networkhelper = Networkhelper(
         url:
             '$openweatherurl?lat=${location.latitude}&lon=${location.longitude}&appid=$apikey&units=metric');

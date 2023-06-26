@@ -6,7 +6,7 @@ import 'package:clima_weather_app/services/weather.dart';
 class LocationScreen extends StatefulWidget {
   final weatherData;
 
-  LocationScreen({this.weatherData});
+  const LocationScreen({super.key, this.weatherData});
   @override
   _LocationScreenState createState() => _LocationScreenState();
 }
@@ -81,7 +81,7 @@ class _LocationScreenState extends State<LocationScreen> {
                             await weatherModel.getcityweather(typedName);
                         updateUI(city_weatherdata);
                       }
-                      ;
+
                     },
                     child: const Icon(
                       Icons.location_city,
@@ -99,7 +99,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       '$temp°',
                       style: kTempTextStyle,
                     ),
-                    Text(
+                     Text(
                       '${weatherModel.getWeatherIcon(condition)}',
                       style: kConditionTextStyle,
                     ),
